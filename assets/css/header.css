@@ -1,0 +1,97 @@
+.wrapper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem 0;
+}
+
+.code-style {
+  color: #c778dd;
+}
+
+.button-links {
+  padding: 14px 40px;
+  background: #040303;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 4px 4px 0px rgb(109, 106, 106);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in;
+}
+
+.button-links:hover {
+  box-shadow: 2px 2px 0 #ccc;
+}
+.intro {
+  font-size: clamp(1rem, 5vw, 2.2rem);
+  font-weight: 400;
+}
+
+.intro-name {
+  font-size: clamp(5.2rem, 7vw, 6.2rem);
+  font-weight: 500;
+  min-width: 29rem;
+  max-width: 40rem;
+}
+
+.occupation {
+  max-width: max-content;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+
+  overflow: hidden;
+  border-right: 0.1em solid #040303;
+  white-space: nowrap;
+  letter-spacing: 0.2em;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 450;
+  color: #c778dd;
+}
+
+.comment {
+  color: #abb2bf;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 20px;
+
+  margin: 2rem 0 4rem;
+}
+
+.intro-wrapper .comment {
+  max-width: 38rem;
+}
+
+#lottie-dev {
+  width: 400px;
+  height: 400px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #040303;
+  }
+}
+
+@media (max-width: 768px) {
+  #lottie-dev {
+    display: none;
+  }
+}

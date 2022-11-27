@@ -1,0 +1,79 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url(./nav.css);
+@import url(./header.css);
+@import url(./contact.css);
+@import url(./project.css);
+@import url(./skill.css);
+@import url(./footer.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: #000000;
+
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1212;
+  border-radius: 20px;
+  border: 3px solid none;
+}
+
+body {
+  background: #ffffff;
+}
+
+#container {
+  margin: 2rem;
+}
+
+/*Title Sections*/
+section .name-sections {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+section .name-sections::after {
+  display: inline-block;
+  content: '';
+  background: #c778dd;
+  width: 90%;
+  height: 1px;
+}
+
+.name-sections,
+.hash {
+  font-size: 3.2rem;
+  line-height: 42px;
+  font-weight: 500;
+}
+.hash {
+  color: #c778dd;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+@media (min-width: 768px) {
+  #container {
+    margin: 2rem 6rem;
+  }
+}

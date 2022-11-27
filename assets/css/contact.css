@@ -1,0 +1,9 @@
+#wrapper-contact {
+  position: fixed;
+  display: inline-flex;
+  flex-direction: column;
+  right: 3rem;
+  top: calc(100vh - 130px);
+
+  z-index: 1;
+}
