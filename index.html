@@ -33,35 +33,43 @@
       <label for="active" class="close"></label>
       <div class="wrapper">
         <ul>
-          <li><a href="#">_Home</a></li>
-          <li><a href="#">_Project</a></li>
-          <li><a href="#">_About</a></li>
-          <li><a href="#">_Skill</a></li>
+          <li><a href="#home">_Home</a></li>
+          <li><a href="#projects">_Project</a></li>
+          <li><a href="#about">_About</a></li>
+          <li><a href="#skill">_Skill</a></li>
         </ul>
       </div>
     </div>
 
     <!--Header-->
-    <header class="wrapper-header">
-      <div class="intro-wrapper">
-        <p class="intro">Hi all. I am</p>
-        <h1 class="intro-name">Vinicius Santos O.</h1>
-        <p class="occupation">
-          <span class="code-style">&gt;</span>
-          Front-end Developer
-        </p>
-        <p class="comment">
-          // I'm a developer who likes to make digital experiences easier and simpler for people.
-        </p>
-        <a href="#" class="button-links">Download CV &gt;&gt;</a>
+    <header class="container-header" id="home">
+      <div class="wrapper-header">
+        <div class="intro-wrapper">
+          <p class="intro">Hi all. I am</p>
+          <h1 class="intro-name">Vinicius Santos O.</h1>
+          <p class="occupation">
+            <span class="code-style">&gt;</span>
+            Front-end Developer
+          </p>
+          <p class="comment">
+            // I'm a developer who likes to make digital experiences easier and simpler for people.
+          </p>
+          <a href="#" class="button-links">Download CV &gt;&gt;</a>
+        </div>
+        <div id="animation-section">
+          <lottie-player id="lottie-dev" src="/assets/js/dev.json">"></lottie-player>
+        </div>
       </div>
-      <div id="animation-section">
-        <lottie-player id="lottie-dev" src="/assets/js/dev.json">"></lottie-player>
+
+      <div class="wrapper-scroll">
+        <div class="scroll-icon">
+          <span class="wheel"></span>
+        </div>
       </div>
     </header>
 
     <!--Projects-->
-    <section>
+    <section id="projects">
       <p class="name-sections"><span class="hash">#</span>Projects</p>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -183,7 +191,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="about">
       <p class="name-sections"><span class="hash">#</span>About</p>
       <span>
         Hello, i’m Elias!
@@ -203,7 +211,7 @@
       </p>
     </section>
 
-    <section>
+    <section id="skill">
       <p class="name-sections"><span class="hash">#</span>Skill</p>
       <div class="wrapper-languages">
         <p>Languages</p>
@@ -440,7 +448,7 @@
 
     <footer>
       <p class="logo">
-        <a href="./index.html">{Vinicius_Oliveira}</a>
+        <a href="#home">{Vinicius_Oliveira}</a>
       </p>
       <span>
         © Copyright 2022. Developer by Vinicius

@@ -5,8 +5,14 @@
   margin: 5rem 0;
 }
 
+.wrapper-scroll{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .code-style {
-  color: #c778dd;
+  color: #6c21a8;
 }
 
 .button-links {
@@ -47,7 +53,7 @@
   font-size: 1.8rem;
   line-height: 2.6rem;
   font-weight: 450;
-  color: #c778dd;
+  color: #6c21a8;
 }
 
 .comment {
@@ -68,6 +74,28 @@
   width: 400px;
   height: 400px;
 }
+
+.scroll-icon{
+  width: 2rem;
+  height: 3.5rem;
+  position: relative;
+  border: .2rem solid;
+  border-radius: 2rem;
+}
+
+.scroll-icon .wheel{
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  width: .5rem;
+  height: .5rem;
+  background: #040303;
+  transform: translate(-50%, 0);
+  border-radius: .6rem;
+
+  animation: wheel .9s ease-in-out infinite;
+}
+
 
 /* The typing effect */
 @keyframes typing {
@@ -90,8 +118,27 @@
   }
 }
 
+@keyframes wheel{
+  0%{
+    transform: translate(-50%, 0);
+  }
+  20%, 70%{
+    opacity: 1;
+  }
+  90%, 100%{
+    transform: translate(-50%, 250%);
+    opacity: 0;
+  }
+}
+
 @media (max-width: 768px) {
   #lottie-dev {
     display: none;
+  }
+}
+
+@media (min-width: 1024px){
+  .wrapper-header {
+    margin: 6.5rem 0;
   }
 }

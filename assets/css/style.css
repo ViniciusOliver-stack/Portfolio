@@ -19,6 +19,7 @@
   color: #000000;
 
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
@@ -53,7 +54,7 @@ section .name-sections {
 section .name-sections::after {
   display: inline-block;
   content: '';
-  background: #c778dd;
+  background: #6c21a8;
   width: 90%;
   height: 1px;
 }
@@ -65,7 +66,7 @@ section .name-sections::after {
   font-weight: 500;
 }
 .hash {
-  color: #c778dd;
+  color: #6c21a8;
 }
 
 :root {

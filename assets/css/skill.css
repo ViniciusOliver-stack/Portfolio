@@ -26,3 +26,11 @@
   font-size: 2.2rem;
   margin: 2rem 0;
 }
+
+
+.wrapper-languages:has(.card:hover) .card:not(:hover),
+.wrapper-learning:has(.card:hover) .card:not(:hover),
+.wrapper-interest:has(.card:hover) .card:not(:hover) {
+  cursor: pointer;
+  opacity: 0.4;
+}
