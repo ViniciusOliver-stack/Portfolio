@@ -1,3 +1,7 @@
+.container-header{
+  margin-top: 10rem;
+}
+
 .wrapper-header {
   display: flex;
   align-items: center;

@@ -1,10 +1,19 @@
-.languages {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, auto));
-  gap: 2rem;
+.skill{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.languages .card {
+.wrapper-card-tech {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(30px, auto));
+  gap: 2.5rem;
+}
+
+/* .wrapper-card-tech .card {
   width: 62px;
   height: 62px;
   background: linear-gradient(
@@ -18,19 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.wrapper-languages p,
-.wrapper-learning p,
-.wrapper-interest p {
-  font-size: 2.2rem;
-  margin: 2rem 0;
-}
+} */
 
 
-.wrapper-languages:has(.card:hover) .card:not(:hover),
-.wrapper-learning:has(.card:hover) .card:not(:hover),
-.wrapper-interest:has(.card:hover) .card:not(:hover) {
-  cursor: pointer;
-  opacity: 0.4;
-}
+
