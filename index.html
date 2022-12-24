@@ -22,28 +22,35 @@
 <body>
   <div id="container">
     <!--Menu-->
-    <div class="wrapper-nav">
+    <div class="wrapper-nav" id="top">
       <p class="logo">
-        <a href="">{Vinicius_Oliver}</a>
+        <a href="">
+          <svg width="32" height="42" viewBox="0 0 32 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H10.5385L16.6638 30.1659L22.7234 0H31.8127L23.3819 42H9.87951L1.71227 1.24372H1.64641L0 0Z"
+              fill="#121212" />
+          </svg>
+
+        </a>
       </p>
 
-      <div class="menu-btn"><span>Close</span></div>
+      <div class="menu-btn"><span></span></div>
       <div class="close"></div>
-      <div class="wrapper"> <!-- Aqui seria a nav-->
+      <div class="wrapper">
+        <!-- Aqui seria a nav-->
         <ul>
-          <li><a href="#home">_Home</a></li>
-          <li><a href="#projects">_Project</a></li>
-          <li><a href="#about">_About</a></li>
-          <li><a href="#skill">_Skill</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
         </ul>
-  </div>
+      </div>
     </div>
 
     <!--Header-->
     <header class="container-header" id="home">
       <div class="wrapper-header">
         <div class="intro-wrapper">
-          <p class="intro">Hi all. I am</p>
+          <p class="intro">Hi all. My name is</p>
           <h1 class="intro-name">Vinicius Santos O.</h1>
           <p class="occupation">
             <span class="code-style">&gt;</span>
@@ -67,252 +74,728 @@
     </header>
 
     <!--Projects-->
-    <section id="projects">
+    <div class="projects" id="project">
       <p class="name-sections"><span class="hash">#</span>Projects</p>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="banner-project">
-              <img src="./assets/images/projects/Pokedex.png" alt="">
-            </div>
-            <div class="info-project">
-              <h3 class="name-project">Pokedex</h3>
-              <span class="description-project">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                accumsan urna ut augue posuere ullamcorper. Vestibulum congue orci eget felis feugiat congue. In mollis
-                condimentum diam non dictum.</span>
 
-              <div class="links-projects">
-                <a href="#" class="fa-brands fa-github fa-lg"></a>
-                <a href="#" class="fa-solid fa-link fa-lg"></a>
+      <div class="wrapper-projects">
+        <!--Card 01-->
+        <div class="cards">
+          <div class="top">
+            <div class="folder">
+              <img src="./assets/images/folder.svg" alt="">
+            </div>
+            <div class="links-project">
+              <div class="github">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5_392)">
+                      <path
+                        d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_392">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-external">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 3H21V9" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M10 14L21 3" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide">
-              <div class="banner-project">
-                <img src="./assets/images/projects/Dark Mode.png" alt="">
-              </div>
-              <div class="info-project">
-                <h3 class="name-project">Weather App</h3>
-                <span class="description-project">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                  accumsan urna ut augue posuere ullamcorper. Vestibulum congue orci eget felis feugiat congue. In
-                  mollis condimentum diam non dictum.</span>
+          <div class="header">
+            <p class="name-project">Pokedex V2</p>
 
-                <div class="links-projects">
-                  <a href="#" class="fa-brands fa-github fa-lg"></a>
-                  <a href="#" class="fa-solid fa-link fa-lg"></a>
-                </div>
-              </div>
+            <span class="description-project">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</span>
+          </div>
+          <div class="tech-project">
+            <div class="tech">
+              JavaScript
+            </div>
+            <div class="tech">
+              API - Pokedex
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide">
-              <div class="banner-project">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAvVBMVEUAAADk5OTf39/X19fu7u7p6elISEjy8vKXl5dnZ2fn5+cDsKgEamkASkUDq6QGs7EJqq4IZ2t4eHgNtLwPqbYLYmwTtMcVp74OXW0atdMbpcYQWW0PZ3gcq80htt4hpM0SVGwSYXcntOgdeqAgICDMzMz9/f0zMzOfn5/FxcW8vLxra2sXFxeMjIwzLC0AZV4GS06rq6sCXVkHqakAU00BopkBeXEDYF8IoqQGWVxYWFgRS2EXbIkosuc+Pj73ewFQAAABvElEQVR4nO3ZWVMaQRQGUKabCSAmKi5kcYlGXIgkQdxCiP//Z0m5BCabPtkzyTkv9Nzh4atb9K3uolYDAAAAAAAAAAAAAAAAAAAAAAAAAP4zrYOQOkJ19OoHL1JnqIrDRn0hdYbKOKo3mqkzVEaWN05SZ6iKVr1+nDpDZfTzxsfUGaripL6Qp85QGYM8P0qdoewWl1fuFjFrfPrcXkybptQWl1eXv9yuxvlCr/by1dJD7/jJ5WjWm2GWd2q33VtbT5mppE5H8z+jLNyf3lfWNrqvE0Uqq9PzpdHcjutk2fBhvd598/ZdikwldXbeHhVm+XHI5+7Qm1vbO++fOVJpXbTPLwuF6yz0CoXdnb0Pz5moxC6WrorNaoZsUCho1szZ1WrhjBBDNv/aNiz6urYxOyO0QhjOXhnwv5r2pLt5t+yHbPxQdnT4velu25pMP/dDjPclh9I/293Z3vtWG8RwN95dd/5u8n1S68Vs//bBRfpR4xD7qTNUxjCGVuoMlRF/jHce04nRP2BP1Y/hMHWGqriOxvuTNWPspM5QGb2e8f5kzTB4/EsAAAAAAAAAAAAAAAAAAAAAAAAAwL/lBuwxFm9dvpfUAAAAAElFTkSuQmCC"
-                  alt="">
-              </div>
-              <div class="info-project">
-                <h3 class="name-project">Weather App</h3>
-                <span class="description-project">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                  accumsan urna ut augue posuere ullamcorper. Vestibulum congue orci eget felis feugiat congue. In
-                  mollis condimentum diam non dictum.</span>
-
-                <div class="links-projects">
-                  <a href="#" class="fa-brands fa-github fa-lg"></a>
-                  <a href="#" class="fa-solid fa-link fa-lg"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide">
-              <div class="banner-project">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAvVBMVEUAAADk5OTf39/X19fu7u7p6elISEjy8vKXl5dnZ2fn5+cDsKgEamkASkUDq6QGs7EJqq4IZ2t4eHgNtLwPqbYLYmwTtMcVp74OXW0atdMbpcYQWW0PZ3gcq80htt4hpM0SVGwSYXcntOgdeqAgICDMzMz9/f0zMzOfn5/FxcW8vLxra2sXFxeMjIwzLC0AZV4GS06rq6sCXVkHqakAU00BopkBeXEDYF8IoqQGWVxYWFgRS2EXbIkosuc+Pj73ewFQAAABvElEQVR4nO3ZWVMaQRQGUKabCSAmKi5kcYlGXIgkQdxCiP//Z0m5BCabPtkzyTkv9Nzh4atb9K3uolYDAAAAAAAAAAAAAAAAAAAAAAAAAP4zrYOQOkJ19OoHL1JnqIrDRn0hdYbKOKo3mqkzVEaWN05SZ6iKVr1+nDpDZfTzxsfUGaripL6Qp85QGYM8P0qdoewWl1fuFjFrfPrcXkybptQWl1eXv9yuxvlCr/by1dJD7/jJ5WjWm2GWd2q33VtbT5mppE5H8z+jLNyf3lfWNrqvE0Uqq9PzpdHcjutk2fBhvd598/ZdikwldXbeHhVm+XHI5+7Qm1vbO++fOVJpXbTPLwuF6yz0CoXdnb0Pz5moxC6WrorNaoZsUCho1szZ1WrhjBBDNv/aNiz6urYxOyO0QhjOXhnwv5r2pLt5t+yHbPxQdnT4velu25pMP/dDjPclh9I/293Z3vtWG8RwN95dd/5u8n1S68Vs//bBRfpR4xD7qTNUxjCGVuoMlRF/jHce04nRP2BP1Y/hMHWGqriOxvuTNWPspM5QGb2e8f5kzTB4/EsAAAAAAAAAAAAAAAAAAAAAAAAAwL/lBuwxFm9dvpfUAAAAAElFTkSuQmCC"
-                  alt="">
-              </div>
-              <div class="info-project">
-                <h3 class="name-project">Weather App</h3>
-                <span class="description-project">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                  accumsan urna ut augue posuere ullamcorper. Vestibulum congue orci eget felis feugiat congue. In
-                  mollis condimentum diam non dictum.</span>
-
-                <div class="links-projects">
-                  <a href="#" class="fa-brands fa-github fa-lg"></a>
-                  <a href="#" class="fa-solid fa-link fa-lg"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide">
-              <div class="banner-project">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAvVBMVEUAAADk5OTf39/X19fu7u7p6elISEjy8vKXl5dnZ2fn5+cDsKgEamkASkUDq6QGs7EJqq4IZ2t4eHgNtLwPqbYLYmwTtMcVp74OXW0atdMbpcYQWW0PZ3gcq80htt4hpM0SVGwSYXcntOgdeqAgICDMzMz9/f0zMzOfn5/FxcW8vLxra2sXFxeMjIwzLC0AZV4GS06rq6sCXVkHqakAU00BopkBeXEDYF8IoqQGWVxYWFgRS2EXbIkosuc+Pj73ewFQAAABvElEQVR4nO3ZWVMaQRQGUKabCSAmKi5kcYlGXIgkQdxCiP//Z0m5BCabPtkzyTkv9Nzh4atb9K3uolYDAAAAAAAAAAAAAAAAAAAAAAAAAP4zrYOQOkJ19OoHL1JnqIrDRn0hdYbKOKo3mqkzVEaWN05SZ6iKVr1+nDpDZfTzxsfUGaripL6Qp85QGYM8P0qdoewWl1fuFjFrfPrcXkybptQWl1eXv9yuxvlCr/by1dJD7/jJ5WjWm2GWd2q33VtbT5mppE5H8z+jLNyf3lfWNrqvE0Uqq9PzpdHcjutk2fBhvd598/ZdikwldXbeHhVm+XHI5+7Qm1vbO++fOVJpXbTPLwuF6yz0CoXdnb0Pz5moxC6WrorNaoZsUCho1szZ1WrhjBBDNv/aNiz6urYxOyO0QhjOXhnwv5r2pLt5t+yHbPxQdnT4velu25pMP/dDjPclh9I/293Z3vtWG8RwN95dd/5u8n1S68Vs//bBRfpR4xD7qTNUxjCGVuoMlRF/jHce04nRP2BP1Y/hMHWGqriOxvuTNWPspM5QGb2e8f5kzTB4/EsAAAAAAAAAAAAAAAAAAAAAAAAAwL/lBuwxFm9dvpfUAAAAAElFTkSuQmCC"
-                  alt="">
-              </div>
-              <div class="info-project">
-                <h3 class="name-project">Weather App</h3>
-                <span class="description-project">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                  accumsan urna ut augue posuere ullamcorper. Vestibulum congue orci eget felis feugiat congue. In
-                  mollis condimentum diam non dictum.</span>
-
-                <div class="links-projects">
-                  <a href="#" class="fa-brands fa-github fa-lg"></a>
-                  <a href="#" class="fa-solid fa-link fa-lg"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide">
-              <div class="banner-project">
-                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_9n1ybnqo.json"
-                  background="transparent" speed="1" style="width: 100%; height: 247px;" loop autoplay></lottie-player>
-              </div>
-              <div class="info-project">
-                <h3 class="name-project">🚧 Em construção</h3>
-                <span class="description-project">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                  accumsan urna ut augue posuere ullamcorper. Vestibulum congue orci eget felis feugiat congue. In
-                  mollis condimentum diam non dictum.</span>
-
-                <div class="links-projects">
-                  <a href="#" class="fa-brands fa-github fa-lg"></a>
-                  <a href="#" class="fa-solid fa-link fa-lg"></a>
-                </div>
-              </div>
-            </div>
+          <div class="image-project">
+            <img src="./assets/images/projects/Pokedex.png" alt="">
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <!--Card 02-->
+        <div class="cards">
+          <div class="top">
+            <div class="folder">
+              <img src="./assets/images/folder.svg" alt="">
+            </div>
+            <div class="links-project">
+              <div class="github">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5_392)">
+                      <path
+                        d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_392">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-external">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 3H21V9" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M10 14L21 3" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header">
+            <p class="name-project">Focus Pomodoro</p>
+
+            <span class="description-project">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de
+              Pomodoro com exercícios.</span>
+          </div>
+          <div class="tech-project">
+            <div class="tech">
+              HTML - CSS
+            </div>
+            <div class="tech">
+              JavaScript
+            </div>
+          </div>
+          <div class="image-project">
+            <img src="./assets/images/projects/Dark Mode.png" alt="">
+          </div>
+        </div>
+        <!--Card 03-->
+        <div class="cards">
+          <div class="top">
+            <div class="folder">
+              <img src="./assets/images/folder.svg" alt="">
+            </div>
+            <div class="links-project">
+              <div class="github">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5_392)">
+                      <path
+                        d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_392">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-external">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 3H21V9" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M10 14L21 3" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header">
+            <p class="name-project">Weather App</p>
+
+            <span class="description-project">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de
+              Pomodoro com exercícios.</span>
+          </div>
+          <div class="tech-project">
+            <div class="tech">
+              JavaScript
+            </div>
+            <div class="tech">
+              Open Weather
+            </div>
+          </div>
+          <div class="image-project">
+            <img src="./assets/images/projects/SPA.png" alt="">
+          </div>
+        </div>
+        <!--Card 04-->
+        <div class="cards">
+          <div class="top">
+            <div class="folder">
+              <img src="./assets/images/folder.svg" alt="">
+            </div>
+            <div class="links-project">
+              <div class="github">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5_392)">
+                      <path
+                        d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_392">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-external">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 3H21V9" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M10 14L21 3" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header">
+            <p class="name-project">GitFav</p>
+
+            <span class="description-project">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de
+              Pomodoro com exercícios.</span>
+          </div>
+          <div class="tech-project">
+            <div class="tech">
+              React
+            </div>
+            <div class="tech">
+              Node.JS
+            </div>
+          </div>
+          <div class="image-project">
+            <img src="./assets/images/projects/Pokedex.png" alt="">
+          </div>
+        </div>
+        <!--Card 05-->
+        <div class="cards">
+          <div class="top">
+            <div class="folder">
+              <img src="./assets/images/folder.svg" alt="">
+            </div>
+            <div class="links-project">
+              <div class="github">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5_392)">
+                      <path
+                        d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_392">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-external">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 3H21V9" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M10 14L21 3" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header">
+            <p class="name-project"> 🚧 Em construção</p>
+
+            <span class="description-project">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod autem sequi ab molestiae</span>
+          </div>
+          <div class="tech-project">
+            <div class="tech">
+              ---
+            </div>
+            <div class="tech">
+              ---
+            </div>
+          </div>
+          <div class="image-project">
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_9n1ybnqo.json"
+                  background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
+          </div>
+        </div>
+        <!--Card 06-->
+        <div class="cards">
+          <div class="top">
+            <div class="folder">
+              <img src="./assets/images/folder.svg" alt="">
+            </div>
+            <div class="links-project">
+              <div class="github">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5_392)">
+                      <path
+                        d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_392">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-external">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 3H21V9" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M10 14L21 3" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header">
+            <p class="name-project">Pokedex V2</p>
+
+            <span class="description-project">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de
+              Pomodoro com exercícios.</span>
+          </div>
+          <div class="tech-project">
+            <div class="tech">
+              React
+            </div>
+            <div class="tech">
+              Node.JS
+            </div>
+          </div>
+          <div class="image-project">
+            <img src="./assets/images/projects/Pokedex.png" alt="">
+          </div>
+        </div>
+        <!--Card 07-->
+        <div class="cards">
+          <div class="top">
+            <div class="folder">
+              <img src="./assets/images/folder.svg" alt="">
+            </div>
+            <div class="links-project">
+              <div class="github">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5_392)">
+                      <path
+                        d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_392">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-external">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 3H21V9" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M10 14L21 3" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header">
+            <p class="name-project">Pokedex V2</p>
+
+            <span class="description-project">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de
+              Pomodoro com exercícios.</span>
+          </div>
+          <div class="tech-project">
+            <div class="tech">
+              React
+            </div>
+            <div class="tech">
+              Node.JS
+            </div>
+          </div>
+          <div class="image-project">
+            <img src="./assets/images/projects/Pokedex.png" alt="">
+          </div>
+        </div>
+        <!--Card 08-->
+        <div class="cards">
+          <div class="top">
+            <div class="folder">
+              <img src="./assets/images/folder.svg" alt="">
+            </div>
+            <div class="links-project">
+              <div class="github">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_5_392)">
+                      <path
+                        d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 0.999999C19.91 0.999999 18.73 0.649999 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.649999 5.09 0.999999 5.09 0.999999C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_392">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-external">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 3H21V9" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M10 14L21 3" stroke="black" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header">
+            <p class="name-project">Pokedex V2</p>
+
+            <span class="description-project">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de
+              Pomodoro com exercícios.</span>
+          </div>
+          <div class="tech-project">
+            <div class="tech">
+              React
+            </div>
+            <div class="tech">
+              Node.JS
+            </div>
+          </div>
+          <div class="image-project">
+            <img src="./assets/images/projects/Pokedex.png" alt="">
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
     <section id="about">
       <p class="name-sections"><span class="hash">#</span>About</p>
-      <span>
-        Hello, i’m Elias!
+      <div class="wrapper-about">
+        <div class="about">
+          <p>
+            Hello, my name is Vinicius Santos Oliveira, I'm 23 years old.
+          </p>
+          <p>
+            I'm a Front-end Developer, passionate about technology
+          </p>
+          <p>
+            I'm currently improving my skills in React, Node.JS, SQL to get my first opportunity in the technology
+            field.
+          </p>
+          <p>Always be better than yesterday by being 1% better every day</p>
+        </div>
 
-        I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and
-        raise them into modern user-friendly web experiences.
-
-        Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been
-        helping various clients to establish their presence online. I always strive to learn about the newest
-        technologies and frameworks.
-      </span>
-
-      <p class="pharses">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sit at deleniti. Nesciunt accusantium
-        reprehenderit, aut hic dolor voluptatem suscipit.
-        <p class="author">Vinicius Santos Oliveira</p>
-      </p>
+        <div class="animation">
+          <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_g7dnFTvMeQ.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+      </div>
     </section>
 
     <section id="skill">
       <p class="name-sections"><span class="hash">#</span>Skill</p>
 
-      <div class="skill">
-        <div class="tec-days">
-          <p class="comment">//Technologies I come into contact with on a daily basis</p>
-          <div class="wrapper-card-tech">
-            <!--HTML-->
-            <div class="card">
-              <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.57524 31.7895L0.812317 0.777771H31.1877L28.4248 31.7727L15.9749 35.2222" fill="#E44D26"/>
-                <path d="M15.9999 32.5851V3.32324H28.4163L26.0469 29.7803" fill="#F16529"/>
-                <path d="M6.45538 7.11584H16V10.917H10.6249L10.9765 14.8102H16V18.6029H7.49357L6.45538 7.11584ZM7.66102 20.5118H11.4789L11.7468 23.5511L16 24.6897V28.6583L8.19686 26.4814" fill="#EBEBEB"/>
-                <path d="M25.511 7.11584H15.9831V10.917H25.1593L25.511 7.11584ZM24.8161 14.8102H15.9831V18.6113H20.6717L20.2279 23.5511L15.9831 24.6897V28.6415L23.7695 26.4814" fill="white"/>
-                </svg>
-                
-            </div>
-            <!--CSS-->
-            <div class="card">
-              <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M31.1857 0.777771L28.4188 31.7742L15.9814 35.2222L3.57831 31.779L0.814331 0.777771H31.1857Z" fill="#264DE4"/>
-                <path d="M26.05 29.8004L28.4145 3.31256H16V32.5867L26.05 29.8004Z" fill="#2965F1"/>
-                <path d="M7.1507 14.8105L7.49147 18.6127H16V14.8105H7.1507Z" fill="#EBEBEB"/>
-                <path d="M16 7.11475H15.9869H6.46597L6.81161 10.917H16V7.11475Z" fill="#EBEBEB"/>
-                <path d="M16 28.6409V24.6851L15.9833 24.6895L11.7488 23.5461L11.4781 20.5137H9.42049H7.66135L8.19403 26.4836L15.9825 28.6458L16 28.6409Z" fill="#EBEBEB"/>
-                <path d="M20.6688 18.6126L20.2275 23.5437L15.9869 24.6883V28.644L23.7815 26.4837L23.8387 25.8413L24.7322 15.8314L24.825 14.8104L25.5114 7.11475H15.9869V10.917H21.3445L20.9986 14.8104H15.9869V18.6126H20.6688Z" fill="white"/>
-                </svg>
-                
-            </div>
-            <!--Bootstrap-->
-            <div class="card">
-              <svg width="36" height="28" viewBox="0 0 36 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.93199 0.28064C5.96664 0.28064 4.51237 2.00084 4.57749 3.86636C4.63999 5.65861 4.55879 7.97985 3.97444 9.87281C3.38801 11.7711 2.39693 12.974 0.777771 13.1284V14.8716C2.39693 15.0264 3.38801 16.2287 3.97438 18.1272C4.55879 20.0202 4.63992 22.3414 4.57742 24.1337C4.5123 25.9989 5.96657 27.7194 7.93226 27.7194H28.0706C30.036 27.7194 31.49 25.9992 31.4248 24.1337C31.3624 22.3414 31.4436 20.0202 32.0279 18.1272C32.6143 16.2287 33.603 15.0259 35.2222 14.8716V13.1284C33.6031 12.9737 32.6144 11.7714 32.0279 9.87281C31.4435 7.98012 31.3624 5.65861 31.4248 3.86636C31.49 2.00111 30.036 0.28064 28.0706 0.28064H7.93172H7.93199ZM24.13 17.171C24.13 19.7397 22.2139 21.2976 19.0342 21.2976H13.6214C13.4666 21.2976 13.3181 21.2361 13.2086 21.1266C13.0991 21.0171 13.0376 20.8686 13.0376 20.7138V7.28632C13.0376 7.13148 13.0991 6.98299 13.2086 6.8735C13.3181 6.76402 13.4666 6.70251 13.6214 6.70251H19.0034C21.6547 6.70251 23.3948 8.13868 23.3948 10.3437C23.3948 11.8913 22.2242 13.2768 20.7329 13.5195V13.6003C22.763 13.823 24.13 15.229 24.13 17.171ZM18.444 8.55316H15.3577V12.9125H17.9571C19.9666 12.9125 21.0746 12.1034 21.0746 10.657C21.0744 9.30159 20.1218 8.55316 18.444 8.55316ZM15.3577 14.6422V19.4463H18.5576C20.6498 19.4463 21.758 18.6068 21.758 17.0291C21.758 15.4514 20.6187 14.642 18.423 14.642H15.3577V14.6422Z" fill="#7952B3"/>
-                </svg>
-                
-            </div>
-            <!--JavaScript-->
-            <div class="card">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M35.2222 0.777771H0.777771V35.2222H35.2222V0.777771Z" fill="#F7DF1E"/>
-                <path d="M23.9157 27.6876C24.6095 28.8205 25.5122 29.6532 27.1086 29.6532C28.4498 29.6532 29.3065 28.9829 29.3065 28.0567C29.3065 26.9468 28.4263 26.5537 26.9501 25.908L26.1409 25.5608C23.8052 24.5658 22.2536 23.3192 22.2536 20.6839C22.2536 18.2564 24.1032 16.4084 26.9938 16.4084C29.0517 16.4084 30.5312 17.1247 31.5973 19L29.0769 20.6183C28.5219 19.6233 27.9233 19.2313 26.9938 19.2313C26.0458 19.2313 25.4449 19.8327 25.4449 20.6183C25.4449 21.5893 26.0463 21.9824 27.435 22.5838L28.2442 22.9305C30.9943 24.1098 32.547 25.3121 32.547 28.0151C32.547 30.9292 30.2578 32.5257 27.1835 32.5257C24.1776 32.5257 22.2356 31.0933 21.2853 29.2158L23.9157 27.6876ZM12.4818 27.9681C12.9902 28.8702 13.4528 29.6329 14.5648 29.6329C15.6282 29.6329 16.2991 29.2169 16.2991 27.5991V16.5932H19.5358V27.6428C19.5358 30.9943 17.5708 32.5197 14.7026 32.5197C12.1111 32.5197 10.6103 31.1786 9.84705 29.5632L12.4818 27.9681Z" fill="black"/>
-                </svg>
-                
-            </div>
-            <!--React.JS-->
-            <div class="card">
-                          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 21.0368C19.6771 21.0368 21.0367 19.6772 21.0367 18.0001C21.0367 16.323 19.6771 14.9634 18 14.9634C16.3229 14.9634 14.9633 16.323 14.9633 18.0001C14.9633 19.6772 16.3229 21.0368 18 21.0368Z" fill="#61DAFB"/>
-                            <path d="M18 24.2216C26.9992 24.2216 34.2945 21.4362 34.2945 18.0001C34.2945 14.564 26.9992 11.7786 18 11.7786C9.0008 11.7786 1.70551 14.564 1.70551 18.0001C1.70551 21.4362 9.0008 24.2216 18 24.2216Z" stroke="#61DAFB" stroke-width="2"/>
-                            <path d="M12.612 21.1108C17.1116 28.9044 23.1715 33.8295 26.1472 32.1115C29.123 30.3935 27.8876 22.6828 23.388 14.8893C18.8884 7.09574 12.8285 2.17057 9.85274 3.8886C6.87703 5.60663 8.11238 13.3173 12.612 21.1108Z" stroke="#61DAFB" stroke-width="2"/>
-                            <path d="M12.612 14.8893C8.11238 22.6828 6.87702 30.3935 9.85274 32.1115C12.8285 33.8296 18.8884 28.9044 23.388 21.1108C27.8876 13.3173 29.123 5.60665 26.1472 3.88862C23.1715 2.17059 17.1116 7.09576 12.612 14.8893Z" stroke="#61DAFB" stroke-width="2"/>
-                            </svg>
-                            
-            </div>
-            <!--Node.JS-->
-            <div class="card">
-                          <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.5897 1.14531C15.4438 0.656445 16.5562 0.654237 17.4095 1.14531C21.7026 3.57108 25.9969 5.99306 30.2892 8.42031C31.0965 8.87506 31.6365 9.77354 31.6283 10.7038V25.2982C31.6343 26.267 31.041 27.1869 30.1892 27.6313C25.9103 30.0438 21.6336 32.4591 17.3554 34.8715C16.4837 35.3699 15.349 35.3315 14.5045 34.7923C13.2217 34.0486 11.9366 33.3086 10.6537 32.5657C10.3915 32.4094 10.096 32.285 9.9109 32.0308C10.0746 31.8103 10.3671 31.7828 10.6049 31.6865C11.1404 31.5162 11.6322 31.2429 12.1241 30.9777C12.2485 30.8925 12.4003 30.9252 12.5196 31.0014C13.6166 31.6303 14.7038 32.2775 15.8045 32.9005C16.0393 33.036 16.277 32.8561 16.4777 32.7442C20.6766 30.371 24.8807 28.0069 29.0789 25.633C29.2344 25.5581 29.3204 25.393 29.3078 25.2226C29.3107 20.4082 29.3085 15.593 29.3093 10.7786C29.3271 10.5853 29.2152 10.4075 29.0404 10.3284C24.7763 7.92703 20.5145 5.52199 16.2511 3.12001C16.1773 3.06923 16.0898 3.04198 16.0001 3.04185C15.9105 3.04172 15.8229 3.06871 15.7489 3.11927C11.4856 5.52199 7.22444 7.92924 2.96111 10.3305C2.78692 10.4097 2.67001 10.5845 2.69074 10.7786C2.69147 15.593 2.69074 20.4082 2.69074 25.2234C2.68335 25.3065 2.70161 25.3899 2.74306 25.4624C2.78451 25.5348 2.84717 25.5928 2.92259 25.6286C4.06028 26.2737 5.19944 26.9143 6.33787 27.5573C6.97921 27.9025 7.76667 28.1076 8.47327 27.8431C9.09683 27.6194 9.53392 26.9831 9.52202 26.3211C9.52791 21.5348 9.51908 16.7477 9.52644 11.9622C9.51086 11.7497 9.71242 11.5742 9.919 11.5942C10.4656 11.5905 11.013 11.5868 11.5597 11.5956C11.7878 11.5905 11.9449 11.8193 11.9166 12.0333C11.9144 16.8499 11.9225 21.6666 11.913 26.4832C11.9144 27.7669 11.3871 29.1637 10.1997 29.7918C8.7369 30.5495 6.92892 30.3888 5.48381 29.6622C4.23276 29.0378 3.03889 28.3009 1.81005 27.632C0.956112 27.19 0.365677 26.2663 0.371688 25.2983V10.7038C0.362732 9.75428 0.924216 8.83949 1.75669 8.39136C6.03486 5.97699 10.3123 3.56078 14.5897 1.14531Z" fill="#8CC84B"/>
-                            <path d="M18.322 11.255C20.1879 11.1349 22.1854 11.1838 23.8644 12.103C25.1644 12.8074 25.8851 14.2858 25.9081 15.73C25.8718 15.9248 25.6681 16.0323 25.4822 16.0189C24.9408 16.0182 24.3993 16.0263 23.8579 16.0153C23.6283 16.0241 23.4948 15.8123 23.466 15.6093C23.3104 14.9183 22.9336 14.2339 22.2832 13.9006C21.2847 13.4007 20.127 13.4258 19.0383 13.4363C18.2435 13.4785 17.3888 13.5473 16.7154 14.0147C16.1985 14.3687 16.0415 15.0834 16.226 15.659C16.3999 16.0723 16.877 16.2056 17.2673 16.3286C19.516 16.9167 21.8988 16.8582 24.1045 17.6321C25.0177 17.9476 25.911 18.561 26.2236 19.5171C26.6325 20.7986 26.4533 22.3303 25.5415 23.3591C24.8022 24.2057 23.7253 24.6664 22.6513 24.9167C21.2225 25.2353 19.7397 25.2434 18.2887 25.1019C16.9243 24.9464 15.5045 24.5879 14.4512 23.6583C13.5505 22.8762 13.1106 21.6577 13.1543 20.4816C13.1647 20.283 13.3625 20.1445 13.5527 20.1608C14.0979 20.1564 14.6431 20.1549 15.1883 20.1615C15.406 20.146 15.5674 20.3342 15.5786 20.5394C15.6792 21.1978 15.9266 21.8888 16.5008 22.2792C17.6088 22.994 18.999 22.945 20.2677 22.965C21.3188 22.9184 22.4987 22.9043 23.3564 22.2096C23.809 21.8134 23.9431 21.1504 23.8208 20.5801C23.6883 20.0986 23.1846 19.8742 22.752 19.7275C20.5322 19.0253 18.1228 19.2801 15.9244 18.4861C15.032 18.1707 14.1689 17.5743 13.8261 16.6575C13.3476 15.3598 13.5669 13.7547 14.5741 12.7607C15.5563 11.7719 16.974 11.3911 18.322 11.2548V11.255Z" fill="#8CC84B"/>
-                            </svg>
-                            
-            </div>
-            <!--SQL-->
-            <div class="card">
-                          <svg width="32" height="32" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M92.3193 77.1365C86.8784 76.9988 82.6616 77.5512 79.1249 79.0698C78.1046 79.4837 76.4721 79.4841 76.336 80.7959C76.8802 81.3483 76.9482 82.2459 77.4244 83.005C78.2414 84.3855 79.6687 86.2498 80.961 87.2168C82.3891 88.3211 83.8179 89.4255 85.3136 90.3921C87.9664 92.0492 90.9593 93.0155 93.5436 94.6726C95.0405 95.6384 96.5358 96.882 98.0322 97.9173C98.7804 98.4689 99.2562 99.3673 100.209 99.7121V99.5054C99.7323 98.8836 99.5963 97.9864 99.1205 97.2959C98.4411 96.6055 97.7601 95.984 97.0799 95.2936C95.1077 92.6016 92.6594 90.254 90.007 88.3211C87.8307 86.8021 83.0693 84.7311 82.1854 82.1764C82.1854 82.1764 82.117 82.1078 82.0494 82.0387C83.5454 81.9007 85.3136 81.3483 86.7424 80.934C89.0547 80.3122 91.1629 80.4507 93.5436 79.8293C94.6316 79.5531 95.7199 79.2079 96.8078 78.8626V78.2416C95.5843 76.9988 94.7 75.3421 93.4076 74.1683C89.939 71.1299 86.1298 68.1617 82.1854 65.6765C80.0768 64.2955 77.356 63.3979 75.1117 62.2246C74.2962 61.8099 72.9354 61.6031 72.4597 60.9127C71.2349 59.3941 70.5547 57.3921 69.6708 55.597C67.699 51.7994 65.7941 47.5884 64.0936 43.5845C62.87 40.8918 62.1217 38.199 60.6253 35.7141C53.62 23.9775 46.0025 16.8666 34.3045 9.89333C31.7878 8.44376 28.7953 7.82235 25.5987 7.06324C23.899 6.9938 22.1981 6.8561 20.498 6.78666C19.4096 6.30334 18.3213 4.99186 17.369 4.37045C13.493 1.8848 3.49442 -3.49959 0.637951 3.61134C-1.1986 8.09853 3.35877 12.5167 4.92245 14.7956C6.07958 16.3832 7.57525 18.178 8.39149 19.9732C8.86764 21.1462 9.00329 22.3898 9.47943 23.6323C10.5681 26.6691 11.5877 30.0527 13.0165 32.8836C13.7647 34.3332 14.5806 35.8518 15.5329 37.1637C16.077 37.9228 17.0289 38.2684 17.2334 39.5108C16.2815 40.8918 16.2131 42.9631 15.6685 44.6889C13.2202 52.4903 14.1728 62.1555 17.6411 67.8855C18.729 69.6109 21.3138 73.4092 24.7825 71.9588C27.8434 70.7164 27.1632 66.7812 28.0467 63.3293C28.2515 62.5 28.1155 61.9484 28.5232 61.396V61.5345C29.4755 63.467 30.4274 65.3316 31.3116 67.2645C33.4203 70.647 37.0926 74.1683 40.1531 76.5159C41.786 77.7579 43.078 79.8983 45.1186 80.6578V80.4503H44.9822C44.574 79.8289 43.9619 79.5531 43.4181 79.0694C42.1941 77.8273 40.8333 76.3083 39.8814 74.9274C37.0253 71.0609 34.5082 66.7808 32.2639 62.3623C31.176 60.2226 30.2233 57.8751 29.3394 55.735C28.9309 54.9057 28.9309 53.6637 28.2511 53.2498C27.2308 54.7684 25.7347 56.0803 24.9865 57.9441C23.6949 60.9127 23.5585 64.5717 23.0823 68.3685C22.8103 68.4383 22.9459 68.3685 22.8099 68.5073C20.634 67.9542 19.8858 65.6765 19.0691 63.7432C17.0285 58.8417 16.6884 50.9713 18.4573 45.3103C18.9335 43.8603 20.9741 39.3041 20.1579 37.9232C19.7497 36.6113 18.3889 35.8518 17.6411 34.8165C16.7572 33.5046 15.8045 31.8483 15.1928 30.398C13.5603 26.5318 12.744 22.2514 10.9759 18.3852C10.1596 16.59 8.73199 14.7265 7.57525 13.0694C6.28325 11.2056 4.85482 9.89333 3.83452 7.68425C3.49481 6.92515 3.01827 5.68232 3.56244 4.85377C3.69848 4.3014 3.97017 4.09466 4.51472 3.95657C5.39899 3.19667 7.91574 4.16331 8.79923 4.57759C11.316 5.61248 13.4242 6.57992 15.5329 8.02948C16.4847 8.71994 17.5051 10.0318 18.729 10.377H20.1575C22.3341 10.86 24.7821 10.5151 26.8227 11.1362C30.4278 12.3095 33.692 14.0357 36.6168 15.8999C45.5267 21.6299 52.8714 29.7766 57.8368 39.5108C58.6531 41.0981 58.9928 42.5489 59.741 44.2052C61.1698 47.5884 62.938 51.0403 64.3656 54.3541C65.7941 57.5985 67.1541 60.9127 69.1947 63.6055C70.215 65.0547 74.2954 65.8146 76.132 66.5741C77.4924 67.1951 79.601 67.7478 80.825 68.5069C83.1373 69.9561 85.4496 71.614 87.6263 73.2013C88.7146 74.0298 92.1148 75.756 92.3193 77.1365Z" fill="#00546B"/>
-                            <path d="M22.9455 17.142C21.7896 17.142 20.9737 17.2809 20.1575 17.4876V17.6257H20.2935C20.8381 18.7304 21.7896 19.4899 22.4694 20.4562C23.0139 21.5605 23.4897 22.6656 24.0342 23.7704C24.1019 23.7009 24.1699 23.6323 24.1699 23.6323C25.1226 22.9414 25.5983 21.8371 25.5983 20.18C25.1902 19.6971 25.1222 19.2137 24.7821 18.7304C24.3743 18.0396 23.4897 17.6947 22.9455 17.142Z" fill="#00546B"/>
-                            </svg>
-                            
-            </div>
-            <!--Github-->
-            <div class="card">
-              <svg width="36" height="34" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.0001 0.202881C8.48968 0.202881 0.777771 7.91344 0.777771 17.4252C0.777771 25.0346 5.71247 31.4902 12.5555 33.7675C13.4161 33.9268 13.7322 33.3939 13.7322 32.9389C13.7322 32.5283 13.7161 31.1715 13.7088 29.7325C8.91745 30.7743 7.90644 27.7005 7.90644 27.7005C7.12302 25.7098 5.99423 25.1806 5.99423 25.1806C4.43172 24.1116 6.11201 24.1335 6.11201 24.1335C7.84147 24.2551 8.75212 25.9083 8.75212 25.9083C10.2882 28.5413 12.781 27.78 13.7638 27.3401C13.9183 26.2268 14.3647 25.4672 14.8572 25.0371C11.032 24.6015 7.01064 23.1248 7.01064 16.5257C7.01064 14.6455 7.68344 13.1091 8.78521 11.903C8.60638 11.4692 8.01693 9.71759 8.95203 7.34533C8.95203 7.34533 10.3982 6.88243 13.6894 9.11071C15.0631 8.729 16.5364 8.53774 18.0001 8.53125C19.4637 8.53774 20.9381 8.729 22.3145 9.11071C25.6017 6.88243 27.0459 7.34533 27.0459 7.34533C27.9833 9.71759 27.3936 11.4692 27.2148 11.903C28.319 13.1091 28.9872 14.6454 28.9872 16.5257C28.9872 23.1404 24.9583 24.5971 21.1233 25.0233C21.741 25.5578 22.2914 26.606 22.2914 28.2127C22.2914 30.517 22.2714 32.3716 22.2714 32.9389C22.2714 33.3972 22.5814 33.9343 23.4545 33.7652C30.2937 31.4853 35.2222 25.032 35.2222 17.4252C35.2222 7.91344 27.5114 0.202881 18.0001 0.202881Z" fill="black"/>
-                <path d="M7.22806 24.7364C7.19024 24.8219 7.05544 24.8476 6.93293 24.789C6.80799 24.7328 6.73775 24.6161 6.77827 24.5302C6.81542 24.4421 6.95022 24.4175 7.07489 24.4767C7.2001 24.5328 7.27142 24.6505 7.22806 24.7364ZM8.07523 25.4923C7.99311 25.5685 7.83251 25.5331 7.7235 25.4127C7.61085 25.2927 7.58978 25.1322 7.67312 25.0548C7.75781 24.9788 7.91355 25.0143 8.02647 25.1345C8.13912 25.2559 8.161 25.4154 8.0751 25.4924L8.07523 25.4923ZM8.65645 26.4594C8.55082 26.5328 8.3782 26.464 8.27163 26.3108C8.16613 26.1578 8.16613 25.9741 8.27392 25.9005C8.3809 25.8269 8.55082 25.8931 8.65888 26.045C8.76423 26.2008 8.76423 26.3844 8.65631 26.4595L8.65645 26.4594ZM9.63923 27.5796C9.54481 27.6836 9.34382 27.6557 9.1966 27.5136C9.04613 27.3748 9.00412 27.1777 9.0988 27.0736C9.1943 26.9693 9.3965 26.9986 9.54481 27.1395C9.69434 27.2781 9.73999 27.4766 9.63936 27.5796H9.63923ZM10.9094 27.9578C10.868 28.0926 10.6743 28.1539 10.4792 28.0966C10.2845 28.0376 10.157 27.8796 10.1963 27.7433C10.2368 27.6075 10.4313 27.5436 10.6278 27.605C10.8223 27.6637 10.9501 27.8205 10.9096 27.9578H10.9094ZM12.3552 28.1181C12.3601 28.2602 12.1946 28.378 11.9899 28.3805C11.7839 28.385 11.6174 28.27 11.6152 28.1304C11.6152 27.9869 11.7769 27.8702 11.9827 27.8669C12.1875 27.8628 12.3552 27.9769 12.3552 28.1181ZM13.7754 28.0637C13.8 28.2022 13.6576 28.3446 13.4543 28.3824C13.2544 28.4189 13.0694 28.3334 13.0438 28.196C13.019 28.0539 13.1641 27.9117 13.3636 27.8748C13.5672 27.8394 13.7495 27.9228 13.7754 28.0637Z" fill="black"/>
-                </svg>
-            </div>
-            <!--Git-->
-            <div class="card">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M34.5726 16.4654L19.5338 1.4274C18.6683 0.56131 17.2636 0.56131 16.397 1.4274L13.2741 4.55027L17.2356 8.51179C18.1562 8.20071 19.2119 8.40939 19.9457 9.14322C20.683 9.88176 20.8902 10.9464 20.5716 11.87L24.3894 15.6879C25.3131 15.3697 26.3789 15.5756 27.1166 16.3145C28.1476 17.3452 28.1476 19.0156 27.1166 20.0469C26.0853 21.0784 24.4149 21.0784 23.383 20.0469C22.6075 19.2706 22.4159 18.1316 22.8085 17.1762L19.2481 13.6158L19.2477 22.9853C19.5058 23.1129 19.7415 23.2815 19.9457 23.4845C20.9767 24.5151 20.9767 26.1857 19.9457 27.2178C18.9144 28.2487 17.2432 28.2487 16.2133 27.2178C15.1823 26.1857 15.1823 24.5153 16.2133 23.4846C16.4604 23.2374 16.754 23.0416 17.0773 22.9086V13.4517C16.7536 13.3196 16.4598 13.1237 16.2133 12.8757C15.4321 12.0956 15.2443 10.9494 15.6446 9.99021L11.7394 6.08466L1.42764 16.3958C0.561148 17.2627 0.561148 18.6675 1.42764 19.5337L16.4667 34.572C17.3325 35.4382 18.7369 35.4382 19.6038 34.572L34.5725 19.6036C35.4387 18.7371 35.4387 17.3314 34.5725 16.4654" fill="#DE4C36"/>
-                </svg>
-                
-            </div>
-            <!--Insomnia-->
-            <div class="card">
-              <svg width="32" height="32" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50.0369 97.646C76.2472 97.646 97.4947 76.3985 97.4947 50.1882C97.4947 23.9782 76.2472 2.73071 50.0369 2.73071C23.8269 2.73071 2.57935 23.9782 2.57935 50.1882C2.57935 76.3985 23.8269 97.646 50.0369 97.646Z" fill="white"/>
-                <path d="M50.0372 0.188232C22.423 0.188232 0.0372314 22.574 0.0372314 50.1882C0.0372314 77.8026 22.423 100.188 50.0372 100.188C77.6516 100.188 100.037 77.8026 100.037 50.1882C100.037 22.574 77.6516 0.188232 50.0372 0.188232ZM50.0372 5.27298C74.8432 5.27298 94.9525 25.3822 94.9525 50.1882C94.9525 74.9942 74.8432 95.1035 50.0372 95.1035C25.2312 95.1035 5.12198 74.9942 5.12198 50.1882C5.12198 25.3822 25.2312 5.27298 50.0372 5.27298Z" fill="#4000BF"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M50.6022 14.5952C70.26 14.5952 86.1957 30.5307 86.1957 50.1886C86.1957 69.8461 70.26 85.7817 50.6022 85.7817C30.9448 85.7817 15.0092 69.8461 15.0092 50.1886C15.0092 45.3842 15.9609 40.8023 17.6863 36.6211C20.2055 40.0517 24.2682 42.2789 28.8509 42.2789C36.4957 42.2789 42.6928 36.0817 42.6928 28.437C42.6928 23.8542 40.4657 19.7916 37.0347 17.2724C41.2163 15.547 45.7982 14.5952 50.6022 14.5952Z" fill="url(#paint0_linear_31_34)"/>
-                <defs>
-                <linearGradient id="paint0_linear_31_34" x1="50.6022" y1="85.7817" x2="50.6022" y2="14.5952" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#7400E1"/>
-                <stop offset="1" stop-color="#4000BF"/>
-                </linearGradient>
-                </defs>
-                </svg>
-                
-            </div>
+      <div class="container-skill">
+
+        <p class="comment">//Technologies I come into contact with on a daily basis</p>
+
+        <!--HTML-->
+        <div class="skills">
+          <div class="skill-tech">
+            <svg width="39" height="43" viewBox="0 0 39 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.35594 38.7146L0.906738 0H38.827L35.3778 38.6937L19.8355 43" fill="#E44D26" />
+              <path d="M19.8668 39.7079V3.17773H35.3673L32.4094 36.2064" fill="#F16529" />
+              <path
+                d="M7.95142 7.91235H19.8668V12.6576H13.1566L13.5956 17.5178H19.8668V22.2527H9.24748L7.95142 7.91235ZM9.45652 24.6357H14.2227L14.5572 28.4299L19.8668 29.8513V34.8056L10.1255 32.0881"
+                fill="#EBEBEB" />
+              <path
+                d="M31.7402 7.91235H19.8457V12.6576H31.3012L31.7402 7.91235ZM30.8727 17.5179H19.8457V22.2631H25.6989L25.1449 28.4299L19.8457 29.8513V34.7847L29.5662 32.0881"
+                fill="white" />
+            </svg>
+
           </div>
+          <div class="progress-bar">
+            <div class="html"></div>
+          </div>
+          <span>90%</span>
+        </div>
+
+        <!--CSS-->
+        <div class="skills">
+          <div class="skill-tech">
+            <svg width="38" height="43" viewBox="0 0 38 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_26_198)">
+                <path d="M37.6551 0L34.2254 38.6955L18.8083 43L3.43362 38.7015L0.00744629 0H37.6551Z" fill="#264DE4" />
+                <path d="M31.2889 36.2314L34.2199 3.16431H18.8312V39.7097L31.2889 36.2314Z" fill="#2965F1" />
+                <path d="M7.86169 17.5183L8.28413 22.2649H18.8311V17.5183H7.86169Z" fill="#EBEBEB" />
+                <path d="M18.8312 7.91113H18.8148H7.01294L7.44136 12.6578H18.8312V7.91113Z" fill="#EBEBEB" />
+                <path
+                  d="M18.8312 34.7841V29.8457L18.8105 29.8512L13.5615 28.4238L13.226 24.6382H10.6754H8.49475L9.15505 32.091L18.8095 34.7902L18.8312 34.7841Z"
+                  fill="#EBEBEB" />
+                <path
+                  d="M24.6185 22.2649L24.0714 28.4208L18.8148 29.8497V34.7879L28.4769 32.0911L28.5479 31.2892L29.6554 18.7929L29.7703 17.5184L30.6212 7.91113H18.8148V12.6578H25.4561L25.0272 17.5184H18.8148V22.2649H24.6185Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_26_198">
+                  <rect width="38" height="43" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="progress-bar">
+            <div class="css"></div>
+          </div>
+          <span>90%</span>
+
+        </div>
+
+        <!--Bootstrap-->
+        <div class="skills">
+          <div class="skill-tech">
+            <svg width="44" height="35" viewBox="0 0 44 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_27_212)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.33457 0.330078C6.84888 0.330078 5.00954 2.48804 5.09192 4.82831C5.17095 7.07664 5.06827 9.9886 4.3292 12.3633C3.5875 14.7446 2.334 16.2537 0.286133 16.4474V18.6342C2.334 18.8283 3.5875 20.3366 4.32911 22.7183C5.06827 25.093 5.17086 28.0049 5.09184 30.2533C5.00946 32.5932 6.84879 34.7515 9.33492 34.7515H34.8053C37.2911 34.7515 39.1301 32.5935 39.0477 30.2533C38.9687 28.0049 39.0713 25.093 39.8104 22.7183C40.5521 20.3366 41.8025 18.8277 43.8506 18.6342V16.4474C41.8026 16.2533 40.5522 14.745 39.8104 12.3633C39.0712 9.9889 38.9687 7.07664 39.0477 4.82831C39.1301 2.48838 37.2911 0.330078 34.8053 0.330078H9.33427H9.33457ZM29.8213 21.5187C29.8213 24.7411 27.398 26.6954 23.3764 26.6954H16.5304C16.3346 26.6954 16.1468 26.6183 16.0083 26.4809C15.8699 26.3436 15.7921 26.1573 15.7921 25.9631V9.11857C15.7921 8.92434 15.8699 8.73802 16.0083 8.6007C16.1468 8.46334 16.3346 8.38621 16.5304 8.38621H23.3374C26.6907 8.38621 28.8915 10.1878 28.8915 12.954C28.8915 14.8954 27.411 16.6335 25.5249 16.938V17.0393C28.0924 17.3186 29.8213 19.0825 29.8213 21.5187ZM22.6299 10.7078H18.7264V16.1766H22.0141C24.5557 16.1766 25.957 15.1614 25.957 13.347C25.9568 11.6467 24.752 10.7078 22.6299 10.7078ZM18.7264 18.3464V24.3731H22.7735C25.4197 24.3731 26.8213 23.3199 26.8213 21.3407C26.8213 19.3615 25.3804 18.3461 22.6033 18.3461H18.7264V18.3464Z"
+                  fill="#7952B3" />
+              </g>
+              <defs>
+                <clipPath id="clip0_27_212">
+                  <rect width="44" height="35" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+          </div>
+          <div class="progress-bar">
+            <div class="bootstrap"></div>
+          </div>
+          <span>75%</span>
+        </div>
+
+        <!--JavaScript-->
+        <div class="skills">
+          <div class="skill-tech">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_27_214)">
+                <path d="M39.8226 0.235352H0.21875V39.8392H39.8226V0.235352Z" fill="#F7DF1E" />
+                <path
+                  d="M26.8225 31.176C27.6202 32.4786 28.6581 33.436 30.4937 33.436C32.0358 33.436 33.0208 32.6653 33.0208 31.6003C33.0208 30.3242 32.0087 29.8722 30.3114 29.1298L29.381 28.7306C26.6955 27.5865 24.9114 26.1532 24.9114 23.1232C24.9114 20.3321 27.0381 18.2073 30.3617 18.2073C32.7279 18.2073 34.429 19.0308 35.6548 21.187L32.7568 23.0478C32.1187 21.9037 31.4304 21.4529 30.3617 21.4529C29.2717 21.4529 28.5808 22.1444 28.5808 23.0478C28.5808 24.1642 29.2723 24.6162 30.869 25.3077L31.7994 25.7063C34.9614 27.0622 36.7468 28.4446 36.7468 31.5526C36.7468 34.9032 34.1146 36.7388 30.5798 36.7388C27.1236 36.7388 24.8907 35.0918 23.7981 32.9331L26.8225 31.176ZM13.6759 31.4985C14.2605 32.5357 14.7923 33.4127 16.071 33.4127C17.2937 33.4127 18.065 32.9343 18.065 31.0742V18.4198H21.7865V31.1245C21.7865 34.978 19.5272 36.7319 16.2294 36.7319C13.2497 36.7319 11.5241 35.1899 10.6465 33.3325L13.6759 31.4985Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_27_214">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="progress-bar">
+            <div class="javascript"></div>
+          </div>
+          <span>65%</span>
+        </div>
+
+        <!--React-->
+        <div class="skills">
+          <div class="skill-tech">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_27_217)">
+                <path
+                  d="M22.547 26.47C24.7381 26.47 26.5143 24.7114 26.5143 22.542C26.5143 20.3726 24.7381 18.614 22.547 18.614C20.356 18.614 18.5797 20.3726 18.5797 22.542C18.5797 24.7114 20.356 26.47 22.547 26.47Z"
+                  fill="#61DAFB" />
+                <path
+                  d="M22.547 30.5897C34.304 30.5897 43.835 26.9867 43.835 22.5421C43.835 18.0975 34.304 14.4944 22.547 14.4944C10.79 14.4944 1.25903 18.0975 1.25903 22.5421C1.25903 26.9867 10.79 30.5897 22.547 30.5897Z"
+                  stroke="#61DAFB" stroke-width="3" />
+                <path
+                  d="M15.5078 26.5659C21.3863 36.647 29.3034 43.0178 33.191 40.7955C37.0786 38.5731 35.4647 28.5993 29.5862 18.5182C23.7077 8.43717 15.7906 2.06636 11.903 4.28866C8.01539 6.51095 9.62932 16.4848 15.5078 26.5659Z"
+                  stroke="#61DAFB" stroke-width="3" />
+                <path
+                  d="M15.5078 18.5182C9.6293 28.5993 8.01538 38.5731 11.903 40.7954C15.7906 43.0178 23.7076 36.647 29.5862 26.5659C35.4647 16.4848 37.0786 6.51096 33.191 4.28866C29.3033 2.06636 21.3863 8.43714 15.5078 18.5182Z"
+                  stroke="#61DAFB" stroke-width="3" />
+              </g>
+              <defs>
+                <clipPath id="clip0_27_217">
+                  <rect width="45" height="45" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+          </div>
+          <div class="progress-bar">
+            <div class="react"></div>
+          </div>
+          <span>30%</span>
+        </div>
+
+        <!--Node-->
+        <div class="skills">
+          <div class="skill-tech">
+            <svg width="39" height="43" viewBox="0 0 39 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_27_225)">
+                <path
+                  d="M17.6916 0.580673C18.7427 -0.0235723 20.1118 -0.0263017 21.162 0.580673C26.4455 3.579 31.7306 6.57263 37.0132 9.57279C38.0068 10.1349 38.6714 11.2454 38.6612 12.3952V30.4343C38.6687 31.6317 37.9384 32.7688 36.8901 33.3181C31.624 36.2999 26.3606 39.2854 21.0954 42.2672C20.0226 42.8833 18.626 42.8356 17.5867 42.1692C16.0079 41.25 14.4264 40.3354 12.8475 39.4171C12.5248 39.224 12.1611 39.0702 11.9333 38.756C12.1347 38.4834 12.4948 38.4494 12.7874 38.3304C13.4464 38.1199 14.0517 37.7821 14.6571 37.4543C14.8102 37.349 14.9971 37.3894 15.1439 37.4835C16.4939 38.2609 17.832 39.061 19.1866 39.8309C19.4756 39.9985 19.7682 39.776 20.0152 39.6378C25.1828 36.7045 30.3569 33.7823 35.5237 30.8481C35.7151 30.7556 35.8209 30.5515 35.8053 30.3409C35.809 24.3902 35.8063 18.4384 35.8072 12.4877C35.8291 12.2487 35.6914 12.029 35.4762 11.9312C30.2284 8.96308 24.9833 5.99038 19.7363 3.02145C19.6454 2.95869 19.5377 2.92501 19.4274 2.92485C19.3171 2.92469 19.2093 2.95804 19.1182 3.02054C13.8713 5.99038 8.62705 8.96581 3.38009 11.9338C3.1657 12.0318 3.02182 12.2478 3.04734 12.4877C3.04824 18.4384 3.04734 24.3902 3.04734 30.3418C3.03824 30.4446 3.06071 30.5476 3.11173 30.6372C3.16275 30.7267 3.23986 30.7984 3.33268 30.8426C4.73286 31.64 6.13482 32.4318 7.5359 33.2265C8.32522 33.6532 9.29437 33.9067 10.164 33.5799C10.9314 33.3034 11.4693 32.5169 11.4547 31.6986C11.462 25.7826 11.4511 19.8657 11.4601 13.9506C11.441 13.688 11.689 13.471 11.9433 13.4958C12.616 13.4912 13.2897 13.4866 13.9625 13.4975C14.2433 13.4912 14.4365 13.774 14.4018 14.0386C14.3991 19.992 14.4091 25.9456 14.3973 31.899C14.3991 33.4857 13.75 35.2122 12.2887 35.9885C10.4885 36.9251 8.26333 36.7265 6.4848 35.8284C4.94511 35.0565 3.47581 34.1457 1.96346 33.3189C0.912506 32.7726 0.185847 31.6309 0.193245 30.4344V12.3952C0.182224 11.2216 0.873251 10.0909 1.89779 9.53699C7.16298 6.55274 12.4273 3.56626 17.6916 0.580673Z"
+                  fill="#8CC84B" />
+                <path
+                  d="M22.285 13.0764C24.5814 12.9279 27.0397 12.9884 29.1062 14.1246C30.7061 14.9952 31.5931 16.8226 31.6213 18.6077C31.5766 18.8484 31.326 18.9813 31.0971 18.9648C30.4309 18.9639 29.7644 18.9739 29.0982 18.9602C28.8155 18.9711 28.6513 18.7094 28.6158 18.4585C28.4244 17.6043 27.9606 16.7584 27.1601 16.3464C25.9312 15.7285 24.5065 15.7596 23.1665 15.7725C22.1883 15.8247 21.1365 15.9097 20.3078 16.4875C19.6715 16.925 19.4783 17.8084 19.7054 18.5199C19.9195 19.0307 20.5066 19.1956 20.987 19.3475C23.7544 20.0744 26.687 20.002 29.4016 20.9587C30.5255 21.3487 31.6249 22.1068 32.0096 23.2886C32.5128 24.8725 32.2923 26.7658 31.1702 28.0374C30.2602 29.0838 28.935 29.6533 27.6132 29.9626C25.8547 30.3564 24.0298 30.3664 22.244 30.1916C20.5649 29.9993 18.8175 29.5563 17.5212 28.4072C16.4127 27.4406 15.8713 25.9344 15.925 24.4807C15.9379 24.2352 16.1812 24.0641 16.4154 24.0842C17.0863 24.0788 17.7573 24.077 18.4282 24.0851C18.6962 24.0659 18.8949 24.2985 18.9087 24.5522C19.0325 25.366 19.337 26.2201 20.0436 26.7026C21.4072 27.5861 23.1182 27.5256 24.6796 27.5503C25.9732 27.4927 27.4253 27.4753 28.481 26.6166C29.0379 26.1268 29.203 25.3074 29.0524 24.6025C28.8893 24.0073 28.2695 23.73 27.7371 23.5487C25.0052 22.6807 22.0398 22.9957 19.3343 22.0142C18.2359 21.6243 17.1738 20.8873 16.7518 19.754C16.163 18.1501 16.4328 16.1661 17.6724 14.9375C18.8812 13.7154 20.626 13.2447 22.285 13.0762V13.0764Z"
+                  fill="#8CC84B" />
+              </g>
+              <defs>
+                <clipPath id="clip0_27_225">
+                  <rect width="39" height="43" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+          </div>
+          <div class="progress-bar">
+            <div class="node"></div>
+          </div>
+          <span>30%</span>
+        </div>
+
+        <!--Sqlite-->
+        <div class="skills">
+          <div class="skill-tech">
+            <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_716)">
+                <path
+                  d="M44.2592 1.06369C42.1522 -0.814648 39.6042 -0.0592311 37.0869 2.17435C36.6988 2.52191 36.3261 2.88636 35.9701 3.26664C31.6642 7.83385 27.6686 16.2925 26.4273 22.7523C26.9112 23.7323 27.2889 24.9839 27.538 25.9394C27.6628 26.4146 27.7745 26.8932 27.8728 27.3746C27.8728 27.3746 27.834 27.2297 27.6768 26.7703L27.5747 26.4722C27.5537 26.4172 27.5312 26.3628 27.5074 26.3089C27.2256 25.6556 26.4498 24.2774 26.1068 23.6772C25.8148 24.5408 25.5555 25.3473 25.3391 26.0782C26.3273 27.883 26.9275 30.9782 26.9275 30.9782C26.9275 30.9782 26.8765 30.7761 26.6274 30.0758C26.4089 29.4571 25.3126 27.5359 25.0512 27.0868C24.6082 28.7283 24.4306 29.8349 24.5898 30.1044C24.9001 30.627 25.1941 31.5294 25.4514 32.5258C26.0353 34.7716 26.4416 37.5074 26.4416 37.5074L26.4763 37.9648C26.3996 39.8355 26.4378 41.7092 26.5906 43.5753C26.7846 45.915 27.148 47.924 27.6115 49L27.9279 48.8285C27.246 46.7092 26.9684 43.9305 27.0909 40.7292C27.2746 35.8333 28.4016 29.9288 30.4821 23.7752C33.9999 14.4856 38.8794 7.03148 43.3446 3.47081C39.2755 7.14581 33.7651 19.0487 32.1154 23.4546C30.2697 28.3873 28.961 33.0178 28.1729 37.4544C29.5327 33.2955 33.9325 31.509 33.9325 31.509C33.9325 31.509 36.0905 28.8467 38.612 25.0451C37.1011 25.3901 34.6205 25.9802 33.7896 26.3293C32.5646 26.8418 32.2338 27.0174 32.2338 27.0174C32.2338 27.0174 36.2049 24.6 39.6104 23.5057C44.2939 16.1291 49.3981 5.64927 44.2592 1.06369ZM6.33935 2.17231C5.34654 2.17608 4.39549 2.57228 3.69365 3.27451C2.99181 3.97673 2.59612 4.92799 2.5929 5.92081V39.8288C2.59613 40.8213 2.99195 41.7721 3.6939 42.4737C4.39586 43.1752 5.34691 43.5705 6.33935 43.5732H25.5678C25.4237 41.7347 25.3882 39.8892 25.4616 38.0464C25.4494 37.9199 25.4391 37.7586 25.4289 37.6381C25.1799 36.0061 24.8576 34.3861 24.4632 32.783C24.2162 31.8234 23.9018 30.9496 23.7099 30.625C23.473 30.2228 23.5098 29.9921 23.5118 29.743C23.5118 29.498 23.5424 29.2428 23.5874 28.9549C23.7083 28.2357 23.8678 27.5235 24.0651 26.8214L24.5081 26.7642C24.4734 26.6927 24.4796 26.6315 24.4449 26.5661L24.3611 25.7883C24.6056 24.9708 24.8656 24.1581 25.1411 23.3505L25.5494 23.3117C25.5331 23.2791 25.529 23.2341 25.5126 23.2035L25.4249 22.5584C26.7111 15.8617 30.7066 7.36223 35.2249 2.56839C35.3596 2.42752 35.4964 2.30706 35.6291 2.17231H6.33935Z"
+                  fill="#003C58" />
+              </g>
+              <defs>
+                <clipPath id="clip0_6_716">
+                  <rect width="49" height="49" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+          </div>
+          <div class="progress-bar">
+            <div class="sqlite"></div>
+          </div>
+          <span>30%</span>
+        </div>
+
+        <!--GIT-->
+        <div class="skills">
+          <div class="skill-tech">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_27_228)">
+                <path
+                  d="M39.0758 18.1119L21.7844 0.82133C20.7891 -0.174493 19.1741 -0.174493 18.1776 0.82133L14.5869 4.412L19.1419 8.96689C20.2004 8.60922 21.4141 8.84918 22.2579 9.69294C23.1057 10.5421 23.3439 11.7663 22.9776 12.8282L27.3672 17.218C28.4293 16.8521 29.6547 17.0888 30.5029 17.9385C31.6884 19.1235 31.6884 21.0441 30.5029 22.2299C29.3171 23.4158 27.3965 23.4158 26.2101 22.2299C25.3184 21.3373 25.0981 20.0277 25.5495 18.9291L21.4558 14.8354L21.4553 25.6085C21.752 25.7552 22.0231 25.949 22.2579 26.1824C23.4434 27.3674 23.4434 29.2882 22.2579 30.475C21.0721 31.6603 19.1505 31.6603 17.9664 30.475C16.7809 29.2882 16.7809 27.3676 17.9664 26.1826C18.2505 25.8983 18.5882 25.6732 18.9598 25.5203V14.6468C18.5876 14.4949 18.2498 14.2697 17.9664 13.9845C17.0682 13.0876 16.8523 11.7697 17.3125 10.6668L12.8224 6.17623L0.965964 18.0319C-0.0303213 19.0286 -0.0303213 20.6439 0.965964 21.6399L18.2577 38.9307C19.2532 39.9266 20.868 39.9266 21.8648 38.9307L39.0756 21.7202C40.0717 20.7239 40.0717 19.1077 39.0756 18.1119"
+                  fill="#DE4C36" />
+              </g>
+              <defs>
+                <clipPath id="clip0_27_228">
+                  <rect width="40" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+          </div>
+          <div class="progress-bar">
+            <div class="git"></div>
+          </div>
+          <span>50%</span>
+        </div>
+
+        <!--Github-->
+        <div class="skills">
+          <div class="skill-tech">
+            <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_27_230)">
+                <path
+                  d="M19.4136 0.163818C8.75197 0.163818 0.106567 8.84389 0.106567 19.5517C0.106567 28.1178 5.63861 35.3852 13.3099 37.9488C14.2748 38.1283 14.6291 37.5283 14.6291 37.0161C14.6291 36.5539 14.6111 35.0265 14.6029 33.4065C9.23152 34.5793 8.09816 31.119 8.09816 31.119C7.21989 28.8779 5.95447 28.2822 5.95447 28.2822C4.20283 27.0788 6.08649 27.1035 6.08649 27.1035C8.0253 27.2403 9.04621 29.1015 9.04621 29.1015C10.7682 32.0655 13.5628 31.2085 14.6645 30.7133C14.8377 29.46 15.3382 28.6049 15.8903 28.1207C11.602 27.6303 7.09393 25.9679 7.09393 18.5391C7.09393 16.4225 7.84814 14.6929 9.08328 13.3352C8.88279 12.8468 8.22199 10.8749 9.27028 8.20436C9.27028 8.20436 10.8916 7.68326 14.5811 10.1917C16.1211 9.76201 17.7728 9.54669 19.4136 9.5394C21.0544 9.54669 22.7073 9.76201 24.2503 10.1917C27.9354 7.68326 29.5544 8.20436 29.5544 8.20436C30.6053 10.8749 29.9442 12.8468 29.7437 13.3352C30.9816 14.6929 31.7307 16.4224 31.7307 18.5391C31.7307 25.9856 27.2141 27.6253 22.9149 28.1052C23.6073 28.7069 24.2244 29.8868 24.2244 31.6956C24.2244 34.2896 24.202 36.3775 24.202 37.0161C24.202 37.5321 24.5495 38.1366 25.5283 37.9463C33.1954 35.3797 38.7204 28.115 38.7204 19.5517C38.7204 8.84389 30.0762 0.163818 19.4136 0.163818Z"
+                  fill="#161614" />
+                <path
+                  d="M7.33769 27.7821C7.29529 27.8784 7.14415 27.9073 7.0068 27.8413C6.86675 27.778 6.78802 27.6467 6.83343 27.55C6.87509 27.4508 7.02619 27.4231 7.16597 27.4897C7.30633 27.5528 7.38626 27.6854 7.33769 27.7821ZM8.28739 28.633C8.19534 28.7188 8.01528 28.679 7.89307 28.5435C7.7668 28.4083 7.74317 28.2277 7.83662 28.1405C7.93157 28.0549 8.10614 28.0949 8.23272 28.2302C8.35902 28.367 8.38354 28.5465 8.28724 28.6332L8.28739 28.633ZM8.93897 29.7218C8.82054 29.8043 8.62704 29.7269 8.50757 29.5545C8.3893 29.3822 8.3893 29.1754 8.51012 29.0926C8.63005 29.0097 8.82054 29.0842 8.94167 29.2553C9.05979 29.4306 9.05979 29.6374 8.93881 29.7219L8.93897 29.7218ZM10.0407 30.9828C9.93485 31.0999 9.70954 31.0685 9.54451 30.9086C9.3758 30.7522 9.32873 30.5304 9.43488 30.4131C9.54192 30.2958 9.76858 30.3288 9.93486 30.4874C10.1025 30.6434 10.1537 30.8669 10.0409 30.9828H10.0407ZM11.4647 31.4085C11.4182 31.5603 11.201 31.6293 10.9824 31.5648C10.764 31.4984 10.6211 31.3205 10.6652 31.1671C10.7106 31.0142 10.9287 30.9423 11.149 31.0113C11.367 31.0775 11.5103 31.254 11.4648 31.4085H11.4647ZM13.0855 31.589C13.091 31.749 12.9055 31.8816 12.6759 31.8844C12.445 31.8895 12.2583 31.7601 12.2559 31.6029C12.2559 31.4414 12.4371 31.31 12.6679 31.3062C12.8974 31.3016 13.0855 31.4301 13.0855 31.589ZM14.6775 31.5277C14.7051 31.6837 14.5455 31.844 14.3176 31.8866C14.0935 31.9276 13.8861 31.8314 13.8574 31.6768C13.8296 31.5168 13.9922 31.3567 14.2159 31.3151C14.4442 31.2753 14.6485 31.3692 14.6775 31.5277Z"
+                  fill="#161614" />
+              </g>
+              <defs>
+                <clipPath id="clip0_27_230">
+                  <rect width="39" height="38" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+          </div>
+          <div class="progress-bar">
+            <div class="git-hub"></div>
+          </div>
+          <span>50%</span>
         </div>
       </div>
-
     </section>
+
+    <a href="#top" class="btn-top">
+      Back to top
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 27V5" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M7 14L16 5L25 14" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
 
     <div id="wrapper-contact">
       <a href="linkedin">
@@ -369,13 +852,9 @@
     </div>
 
 
-
     <footer>
-      <p class="logo">
-        <a href="#home">{Vinicius_Oliveira}</a>
-      </p>
       <span>
-        © Copyright 2022. Developer by Vinicius
+        Designed & Build by Vinicius Santos O. 🧡
       </span>
     </footer>
 
@@ -386,41 +865,11 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
   <script src="./assets/js/interactions.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-  <!--Swiper JS-->
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
   <script src="./assets/js/script.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        "@0.75": {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        "@1.00": {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        "@1.50": {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
 </body>
 
 </html>

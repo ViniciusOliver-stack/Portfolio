@@ -1,0 +1,26 @@
+.wrapper-about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-about .about{
+  max-width: 675.22px;
+}
+
+.about p{
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 25px;
+  /* or 125% */
+
+  text-align: justify;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px){
+  .animation{
+    display: none;
+  }
+}

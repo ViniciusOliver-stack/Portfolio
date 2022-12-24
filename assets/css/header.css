@@ -1,5 +1,5 @@
 .container-header{
-  margin-top: 10rem;
+  margin-top: 6.5rem;
 }
 
 .wrapper-header {
@@ -16,7 +16,7 @@
 }
 
 .code-style {
-  color: #6c21a8;
+  color: #7B4AE2;
 }
 
 .button-links {
@@ -35,13 +35,14 @@
   box-shadow: 2px 2px 0 #ccc;
 }
 .intro {
-  font-size: clamp(1rem, 5vw, 2.2rem);
-  font-weight: 400;
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-weight: bold;
 }
 
 .intro-name {
-  font-size: clamp(5.2rem, 7vw, 6.2rem);
-  font-weight: 500;
+  font-size: clamp(4.8rem, 7vw, 6.2rem);
+  font-weight: 800;
+  margin: 1.5rem 0 1rem 0;
   min-width: 29rem;
   max-width: 40rem;
 }
@@ -56,14 +57,14 @@
   letter-spacing: 0.2em;
   font-size: 1.8rem;
   line-height: 2.6rem;
-  font-weight: 450;
-  color: #6c21a8;
+  font-weight: 600;
+  color: #7B4AE2;
 }
 
 .comment {
-  color: #abb2bf;
+  color: #ABB2BF;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.6rem;
   line-height: 20px;
 

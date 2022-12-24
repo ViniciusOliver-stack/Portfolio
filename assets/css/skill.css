@@ -1,33 +1,191 @@
-.skill{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-.wrapper-card-tech {
-  display: grid;
-  align-items: center;
-  width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(30px, auto));
-  gap: 2.5rem;
-}
-
-/* .wrapper-card-tech .card {
-  width: 62px;
-  height: 62px;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.1) 100%
-  );
-  backdrop-filter: blur(20px);
-
-  border-radius: 10px;
+.skills{
   display: flex;
   align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+
+.skills p {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 4rem;
+  margin-bottom: 5px;
+}
+
+.skills span{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.progress-bar{
+  background-color: #959595;
+  width: 600px;
+  height: 8px;
+  border-radius: 5px;
+}
+
+.progress-bar div{
+  height: 8px;
+  border-radius: 5px;
+  width: 0%;
+}
+
+.progress-bar div span{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #fff;
+  float: right;
+  margin-top: -11px;
+  margin-right: -20px;
+  color: #000;
+  display: flex;
   justify-content: center;
-} */
+  align-items: center;
+}
+
+.html{
+  background-color: #E44D26;
+  animation: html 1s linear forwards;
+}
+
+.css{
+  background-color: #264DE4;
+  animation: css 1s linear forwards;
+}
+
+.bootstrap{
+  background-color: #7952B3;
+  animation: bootstrap 1s linear forwards;
+}
+
+.javascript{
+  background-color: #F7DF1E;
+  animation: javascript 1s linear forwards;
+}
+
+.react{
+  background-color: #61DAFB;
+  animation: react 1s linear forwards;
+}
+
+.node{
+  background-color: #8CC84B;
+  animation: node 1s linear forwards;
+}
+
+.sqlite{
+  background-color: #003C58;
+  animation: sqlite 1s linear forwards;
+}
+
+.git{
+  background-color: #DE4C36;
+  animation: git 1s linear forwards;
+}
+
+.git-hub{
+  background-color: #161614;
+  animation: github 1s linear forwards;
+}
 
 
+.html span{
+  border: 1px solid #E44D26;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
 
+.css span{
+  border: 1px solid #264DE4;
+}
+
+.bootstrap span{
+  border: 1px solid #7952B3;
+}
+
+.javascript span{
+  border: 1px solid #F7DF1E;
+}
+
+.react span{
+  border: 1px solid #61DAFB;
+}
+
+.node span{
+  border: 1px solid #8CC84B;
+}
+
+.sqlite span{
+  border: 1px solid #003C58;
+}
+
+.sqlite span{
+  border: 1px solid #003C58;
+}
+
+.git span{
+  border: 1px solid #DE4C36;
+}
+
+.github span{
+  border: 1px solid #161614;
+}
+
+
+@keyframes html{
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes css{
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes bootstrap{
+  100%{
+    width: 75%;
+  }
+}
+
+@keyframes javascript{
+  100%{
+    width: 65%;
+  }
+}
+
+@keyframes react{
+  100%{
+    width: 30%;
+  }
+}
+
+@keyframes node{
+  100%{
+    width: 30%;
+  }
+}
+
+@keyframes sqlite{
+  100%{
+    width: 30%;
+  }
+}
+
+@keyframes git{
+  100%{
+    width: 50%;
+  }
+}
+
+@keyframes github{
+  100%{
+    width: 50%;
+  }
+}

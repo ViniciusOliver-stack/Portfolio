@@ -1,9 +1,10 @@
 /*Imports*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url(./nav.css);
 @import url(./header.css);
 @import url(./contact.css);
 @import url(./project.css);
+@import url(./about.css);
 @import url(./skill.css);
 @import url(./footer.css);
 
@@ -14,7 +15,7 @@
   text-decoration: none;
   list-style: none;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
   color: #000000;
 
@@ -51,22 +52,32 @@ section .name-sections {
   gap: 1rem;
   margin: 2rem 0;
 }
-section .name-sections::after {
-  display: inline-block;
-  content: '';
-  background: #6c21a8;
-  width: 90%;
-  height: 1px;
+
+.name-sections{
+  margin-top: 6.3rem !important;
 }
 
 .name-sections,
 .hash {
-  font-size: 3.2rem;
-  line-height: 42px;
-  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  font-weight: 600;
 }
+
 .hash {
-  color: #6c21a8;
+  color: #7B4AE2;
+}
+
+.btn-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 23px;
+  color: rgba(123, 74, 226, 0.5);
 }
 
 :root {
