@@ -1,91 +1,447 @@
 /*Imports*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url(./nav.css);
-@import url(./header.css);
-@import url(./contact.css);
-@import url(./project.css);
-@import url(./about.css);
+@import url(./home.css);
 @import url(./skill.css);
-@import url(./footer.css);
+@import url(./portfolio.css);
+@import url(./media-queries.css);
+@import url(./game.css);
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 3rem;
 
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+    /*==============================================*/
+
+    --primary-color-hue:352;
+    --dark-color-lightness:17%;
+    --light-color-lightness:95%;
+    --white-color-lightness:100%;
+
+    --color-white: hsl(252, 30%, var(--white-color-lightness));
+    --color-light: hsl(0, 0%, var(--light-color-lightness));
+    color: hsl(0, 0%, 95%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+    --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*========== Variables Dark theme ==========*/
+
+body.dark-theme{
+
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+body.dark-theme .nav-logo svg path{
+  fill: #fff;
+}
+
+
+/*========== Button Config ==========*/
+
+.change-theme{
+  font-size: 1.25rem;
+  color: var(---text-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover{
+  color: var(--first-color);
+}
+
+/*==================== BASE ====================*/
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
 
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.6rem;
-  color: #000000;
+}
 
-  scrollbar-width: thin;
+html {
   scroll-behavior: smooth;
 }
 
-*::-webkit-scrollbar {
-  width: 8px;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #1212;
-  border-radius: 20px;
-  border: 3px solid none;
-}
-
 body {
-  background: #ffffff;
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
-#container {
-  margin: 2rem;
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 }
 
-/*Title Sections*/
-section .name-sections {
-  display: flex;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--color-dark);
+}
+
+.section-subtitle {
+  display: block;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section-title, 
+.section-subtitle {
+  text-align: center;
+}
+
+/*==================== LAYOUT ====================*/
+.container,
+.portfolio-container{
+  max-width: 85%;
+  margin: 0 auto;
+  /* margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5); */
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--color-light);
+}
+
+/*==================== BUTTONS ====================*/
+.button{
+  display: inline-block;
+  background: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button-icon{
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.button-flex{
+  display: inline-flex;
   align-items: center;
-  gap: 1rem;
-  margin: 2rem 0;
 }
 
-.name-sections{
-  margin-top: 6.3rem !important;
+
+/*==================== ABOUT ====================*/
+
+.about-description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
 }
 
-.name-sections,
-.hash {
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-  font-weight: 600;
+
+/*==================== FOOTER ====================*/
+footer{
+  font-size: 1.2rem;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid var(--first-color);
+  padding: 2rem;
 }
 
-.hash {
-  color: #7B4AE2;
+.footer-heart{
+  color: var(--first-color);
 }
 
-.btn-top{
+/*========== SCROLL UP ==========*/
+.scroll-up{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: .8;
+  padding: 0 .3rem;
+  border-radius: 50%;
+  z-index: var(--z-tooltip);
+  transition: .4s linear;
+}
+
+.scroll-up:hover{
+  background-color: var(--first-color-alt);
+}
+
+.scroll-up-icon{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Show scroll */
+.show-scroll{
+  bottom: 5rem;
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+  width: .50rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--text-color-light);
+}
+
+/*Customize Theme*/
+.customize-theme{
+  background-color: rgba(0, 0, 0, .6);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: none;
+  place-items: center;
+  font-size: var(--small-font-size);
+}
+
+.customize-theme .card-theme{
+  background-color: var(--container-color);
+  padding: 3rem;
+  border-radius: 1.25rem;
+  width: 40%;
+  max-width: 600px;
+}
+
+.customize-theme .font-size{
+  margin-top: var(--mb-2-5);
+}
+
+.customize-theme .font-size > div{
   display: flex;
-  align-items: center;
   justify-content: center;
-
-  margin-top: 5rem;
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 23px;
-  color: rgba(123, 74, 226, 0.5);
+  align-items: center;
+  background-color: var(--color-light);
+  padding: .6rem 1rem;
+  border-radius: 1.25rem;
 }
 
-:root {
-  font-size: 62.5%;
+.customize-theme .choose-size{
+  background-color: hsl(252, 100%, 90%);
+  height: .35rem;
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.25rem;
 }
 
-@media (min-width: 768px) {
-  #container {
-    margin: 2rem 6rem;
-  }
+.customize-theme .choose-size span{
+  width: 1rem;
+  height: 1rem;
+  background-color: hsl(252, 100%, 90%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.customize-theme .choose-size span.active{
+  background: var(--color-primary);
+}
+
+.customize-theme .color{
+  margin-top: var(--mb-2);
+}
+
+.customize-theme .choose-color{
+  background: var(--color-light);
+  border-radius: 1.25rem;
+  padding: .6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customize-theme .choose-color span{
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.customize-theme .choose-color span:nth-child(1){
+  background: hsl(252, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(2){
+  background: hsl(340, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(3){
+  background: hsl(352, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(4){
+  background: hsl(142, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(5){
+  background: hsl(202, 75%, 60%);
+}
+
+.customize-theme .choose-color span.active{
+  border: 3px solid #fff;
+}
+
+.customize-theme .background{
+  margin-top: var(--mb-2);
+}
+
+.customize-theme .choose-bg{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem;
+}
+
+.customize-theme .choose-bg > div{
+  padding: .8rem .20rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+.customize-theme .choose-bg > div.active{
+  border: 2px solid var(--color-primary);
+}
+
+.customize-theme .choose-bg .bg-1{
+  background-color: hsl(252, 30%, 92%);
+  color: hsl(252, 30%, 17%);
+}
+
+.customize-theme .choose-bg .bg-2{
+  background-color: hsl(252, 30%, 17%);
+  color: #fff;
+}
+
+.customize-theme .choose-bg .bg-3{
+  background-color: hsl(252, 30%, 10%);
+  color: #fff;
+}
+
+.customize-theme .choose-bg > div span{
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 2px solid var(--color-gray);
+  border-radius: 50%;
+
 }
