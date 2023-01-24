@@ -16,7 +16,7 @@
 
 .home-social-icon{
   font-size: 1.25rem;
-  color: var(--color-dark);
+  color: var(--first-color);
 }
 
 .home-social-icon:hover{
