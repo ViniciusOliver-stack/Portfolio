@@ -86,3 +86,8 @@
   justify-self: center;
 }
 
+
+.lottie-player g{
+  border: 1px solid red;
+}
+

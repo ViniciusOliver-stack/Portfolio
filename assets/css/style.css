@@ -314,6 +314,10 @@ footer{
   max-width: 600px;
 }
 
+.customize-theme .card-theme > p{
+  color: var(--first-color);
+}
+
 .customize-theme .font-size{
   margin-top: var(--mb-2-5);
 }

@@ -12,6 +12,10 @@
   flex-wrap: wrap;
 }
 
+.skills-wrapper .nextjs svg path{
+  fill: var(--color-dark);
+}
+
 .styled-components{
   width: 100px;
   height: 100px;
@@ -26,6 +30,10 @@
 
 .styled-components h1{
   font-size: 2rem;
+}
+
+.styled-components h1 span{
+  color: var(--color-dark);
 }
 
 .learn{
